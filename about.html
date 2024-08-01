@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+
+ *{
+    margin: 0px;
+   }
+   .header{
+    width:100%;
+    height: 80px;
+    background-color:blue;
+    grid-column: 1/4;
+    position: sticky;
+    top: 0px;
+    z-index: 100px;
+    }
+    nav ul{
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    font-family: calbiri;
+    font-size: 18px;
+    text-decoration: none;
+    }
+   ul li{
+    padding: 8px 14px;
+   list-style-type: none;
+   }
+   ul li a{
+    color: white;
+    text-decoration:none;
+    font-size: 20px;
+    font-family: calbiri;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    padding-left: 20px;
+   }
+
+   a:hover{
+    color: yellow;
+   }
+  li>img {
+    width: 140px;
+    height:70px;
+    float: left;
+    top:0;
+    z-index: 8px;
+   margin:-22px;
+   margin-left: 30px;
+  }
+    
+      button {
+    background-image:linear-gradient(90deg, rgba(30,85,189,1) 0%, rgba(67,126,235,1) 100%);
+    background-color:#437eeb;
+    color:white;
+    padding: 10px;
+    margin-left:355px;
+    margin-top: -10px;
+    border-radius: 15px;
+}
+    button:hover{
+/*    background-image:linear-gradient(90deg, rgba(30,85,189,1) 0%, rgba(67,126,235,1) 100%);*/
+/*    color:#437eeb;*/
+    background-color: white;
+    padding: 10px;
+    margin-left:355px;
+    margin-top: -10px;
+    border-radius: 15px;
+  }
+
+    .container{
+      background-image: linear-gradient(90deg, rgba(2,59,166,1) 0%, rgba(67,126,235,1) 100%);
+    background-color: #437eeb;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /*margin: -22px;*/
+    }
+    .boxa{
+      text-align: center;
+      padding: 40px;
+      color: white;
+      font-size:20px;
+      font-family:calbiri;
+    }
+  .containera{
+    display: flex;
+    margin-top: 30px;
+  }
+
+    .boxb{
+      width: 600px;
+      padding: 30px;
+      padding-left: 7%;
+    }
+    .boxb h1{
+      color: black;
+      font-size: 20px;
+      font-family: calbiri;
+      text-transform: uppercase;
+      line-height: 35px;
+      letter-spacing: 1px;
+    }
+   .boxb p{
+    color: gray;
+      font-size: 15px;
+      font-family: calbiri;
+      text-transform: capitalize;
+      line-height: 35px;
+      letter-spacing: 1px;
+   }
+   .boxc{
+      width: 500px;
+      padding: 30px;
+   }
+   .boxc img{
+     width: 400px;
+     float: right;
+   }
+   .boxd{
+    width: 300px;
+    background-color: #437eeb;
+  margin: 20px;
+   padding:50px; 
+   }
+   .boxd h1{
+      color: black;
+      font-size: 20px;
+      font-family: calbiri;
+      text-transform: uppercase;
+      line-height: 35px;
+      letter-spacing: 1px;
+     
+   }
+   .boxd p{
+    color: white;
+      font-size: 15px;
+      font-family: calbiri;
+      text-transform: capitalize;
+      line-height: 35px;
+      letter-spacing: 1px;
+      
+   }
+   .boxe{
+    grid-column: 1/4;
+    grid-row: 1/4;
+   }
+   .boxe h3{
+      color: gray;
+      font-size: 15px;
+      font-family: calbiri;
+      text-transform: uppercase;
+      line-height: 35px;
+      letter-spacing: 1px;  
+      font-size: 20px;
+      font-family: calbiri;
+      text-transform: uppercase;
+      line-height: 35px;
+      letter-spacing: 1px;
+      text-align: center;
+   }
+    .boxe h1{
+      color: black;
+      font-size: 20px;
+      font-family: calbiri;
+      text-transform: uppercase;
+      line-height: 35px;
+      letter-spacing: 1px;  
+      font-size: 20px;
+      font-family: calbiri;
+      text-transform: uppercase;
+      line-height: 35px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .boxf{
+       width: 250px;
+       margin: 20px;
+       padding: 30px;   
+    }
+    .boxf p{
+      color: gray;
+      font-size: 18px;
+      font-family: calbiri;
+      text-transform: capitalize;
+      line-height: 35px;
+      letter-spacing: 1px;
+    }
+    .boxf h2{
+      color: black;
+      font-size: 16px;
+      font-family: calbiri;
+      text-transform: uppercase;
+      line-height: 35px;
+      letter-spacing: 1px;
+    }
+    span{
+      background: linear-gradient(90deg, rgba(30,85,189,1) 0%, rgba(67,126,235,1) 100%);
+     color: #ffffff;
+    /*border: none;*/
+    line-height: 54px;
+    transition: all 0.35s ease-in-out;
+    padding:20px;
+    border: 4px solid #437eeb;
+    border-radius: 50%;
+    font-weight: 800;
+    text-align: center;
+}
+.boxg{
+       width: 500px;
+       margin: 20px;
+       padding: 70px; 
+    }
+.boxg h2{
+      color: black;
+      font-size: 16px;
+      font-family: calbiri;
+      text-transform: uppercase;
+      line-height: 35px;
+      letter-spacing: 1px;
+    }
+.boxg p{
+      color: gray;
+      font-size: 18px;
+      font-family: calbiri;
+      text-transform: capitalize;
+      line-height: 35px;
+      letter-spacing: 1px;
+    }
+
+  
+    .boxh {
+       width: 500px;
+       padding-top:180px;
+      /* margin: 20px;
+       padding: 30px;*/ 
+    }
+
+    .boxh img{
+      width: 400px;
+     height:350px;
+     margin-right: 20%;
+     border: 10px solid #ffffff;
+     box-shadow: 0 0 10px #cccccc;
+     max-width: 80%;
+     margin-top:-20%;
+}
+    .boxf{
+       width: 250px;
+       margin: 20px;
+       padding: 30px;   
+    }
+    .boxf h3{
+      color: darkgray;
+      font-size: 20px;
+      font-family: calbiri;
+      text-transform: uppercase;
+      letter-spacing: 1px;  
+      line-height: 35px;
+      text-align: center;
+    }
+    .boxf h1{
+      color: black;
+      font-size: 22px;
+      line-height: 35px;
+      letter-spacing: 2px;  
+      font-family: monospace;
+      text-transform: uppercase;
+      line-height: 30px;
+      text-align: center;
+      font-weight: bolder;
+    }
+.boxi{
+  width: 25%;
+  margin:30px;
+}
+
+.boxi img{
+  width: 400px;
+
+}
+
+
+
+  .boxi h1{
+      color: black;
+      font-size: 22px;
+      line-height: 35px;
+      letter-spacing: 2px;  
+      font-family: monospace;
+      text-transform: uppercase;
+      line-height: 30px;
+      font-weight: bolder;
+      padding-left:30px;
+  }
+  .boxi p{
+       color: gray;
+      font-size: 18px;
+      font-family: calbiri;
+      line-height: 35px;
+      letter-spacing: 1px;
+      padding-left:30px;
+  }
+
+    i{
+      font-size: 35px;
+      color:blue;
+      background-color:white;
+     padding:10px;
+      text-align:center;
+      border-radius:10px;
+      margin-left:20px;
+    }
+ .footer{
+    display: flex;
+    background-color:blue;  
+   
+   }
+   .footer h1{
+    font-family: calbiri;
+    font-size: 17px;
+    color: white;
+    line-height: 35px;
+    letter-spacing: 2px;
+    color: white;
+
+   }
+    .footer p{
+    font-family: calbiri;
+    font-size: 16px;
+    color: white;
+    line-height: 35px;
+    letter-spacing: 2px;
+
+   }
+   .footer ul {
+    margin: 5px;
+   }
+   .footer ul li  {
+     font-family: calbiri;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2px;
+    margin-left:-25px; 
+   }
+   .footer li a {
+        font-family: calbiri;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2px;
+    margin-left:-25px; 
+
+   }
+   .footer a:hover{
+    color: yellow;
+   }
+   .footer h2{
+     font-family: calbiri;
+    font-size: 19px;
+    text-align: left;
+    padding-left:20px;
+    color: white;
+    line-height: 35px;
+    padding-right: 14px;
+    letter-spacing: 3px;
+    color: white;
+    text-transform: uppercase;
+   }
+   .box12{
+    width: 300px;
+    padding: 10px 25px;
+     margin-top: 35px;
+   }
+   .footer i {
+    font-size: 30px;
+    margin: 9px;
+    padding: 10px;
+   }
+
+
+    </style>
+<body>
+  <div class="header">
+<header>
+<nav>
+  <ul>
+  <li><img src="c1.png"></li>
+  <li><a href="index.html">home</a></li>  
+    <li><a href="about.html">About</a></li> 
+    <li><a href="Services.html">Services</a></li> 
+      <li><a href="contact.html">contact</a></li>
+   <li> <button><a href="login.html">LOGIN</a></button></li>
+  </ul>
+</nav>
+</header>
+</div>
+
+  <div class="container">  
+    <div class="boxa">
+      <h1>ABOUT US</h1>
+    </div>
+  </div>
+  <div>
+    <div class="containera">
+      <div class="boxb">
+        <h1>We provide big data analytics Techniques & Data Solutions</h1>
+        <p>Regret eat branch fat garden. Become am he except wishes. Past so at door we walk want such sang. Feeling colonel get her garrets own.</p>
+        <h2>3 Easy Steps to Get Started</h2>
+        <p>Understand Databases</p>
+        <p>Explore The Data Science Workflow</p>
+        <p>Level Up with Big Data</p>
+  </div>
+  <div class="boxc">
+    <img src="9.png">
+  </div>
+</div>
+
+  <div class="containera">
+    <div class="boxd">
+      <h2>Data Science</h2>
+      <p>The Data Analyst</p>
+      <p>The Data Engineer</p>
+      <p>Machine Learning</p>
+      <p>Data Generalist</p>
+    </div>
+<div class="boxd">
+      <h2>Artificial Intelligence</h2>
+      <p>Reactive Machines</p>
+      <p>Limited Memory</p>
+      <p>Theory of Mind</p>
+      <p>Artificial Narrow Intelligence</p>
+    </div>
+  <div class="boxd">
+      <h2>Machine Learning</h2>
+      <p>Linear Regression</p>
+      <p>Support Vector Machines</p>
+      <p>Random Forest</p>
+      <p>Ensemble Methods</p>
+    </div>
+  </div>
+
+  <div class="boxe">
+    <h3>OUR STORY</h3>
+    <h1>How to get started</h1>
+  </div>
+  </div>
+
+ <div class="containera">
+  <div class="boxf">
+     <span>01</span>
+    <h2>Company Started</h2>
+    <p>15/02/2015</p>
+    </div>
+<div class="boxf">
+     <span>02</span>
+    <h2>Reached 2k+ Customers</h2>
+    <p>09/08/2016</p>
+  </div>
+   <div class="boxf">
+     <span>03</span>
+    <h2>Increase Workers</h2>
+    <p>26/08/2018</p>
+    </div>
+ <div class="boxf">
+       <span>04</span>
+      <h2>Win Multiple Award</h2>
+    <p>09/02/2020</p>
+    </div>
+ </div>
+
+  <div class="containera">
+    <div class="boxg">
+      <h2>Our Skill</h2>
+      <h1>We are master in data science& big data analysis</h1>
+      <p>Attention sex questions applauded how happiness. To travelling occasional at oh sympathize prosperous. His merit end means widow songs linen known. Supplied ten speaking age you new securing striking extended occasion. </p>
+      <p>DATA ANAYLSIS</p>
+      <p>SOCIAL ASSISTANT</p>
+      <p>AI SOLUTIONS</p>
+    </div>
+  <div class="boxh">
+    <img src="3.jpg">
+    <img src="1.jpg" style="margin-left:25%; margin-top:-180px">
+  </div>
+  </div>
+
+<div class="boxe">
+  <h3>OUR TEAM</h3>
+  <h1>Meet our experts</h1>
+  </div>
+</div>
+
+  <div class="containera">
+    <div class="boxi">
+      <img src="9.jpg">
+      <i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-square-youtube"></i><i class="fa-brands fa-square-instagram"></i>
+      <h1>Jonathom Dan</h1>
+      <p>Project Manager</p>
+    </div>
+    <div class="boxi">
+      <img src="10.jpg">
+      <i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-square-youtube"></i><i class="fa-brands fa-square-instagram"></i>
+      <h1>Munia Ankor</h1>
+      <p>Co-Founder</p>
+    </div>
+    <div class="boxi">
+      <img src="2.jpg">
+      <i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-square-youtube"></i><i class="fa-brands fa-square-instagram"></i>
+      <h1>Dunal Lays</h1>
+      <p>Assistant Manager</p>
+    </div>
+  </div>
+
+ <div class="footer">
+    <div class="box12">
+        <img src="logo-light.png">
+        <p>Required honoured trifling eat pleasure man relation. Assurance yet bed was improving furniture man. Distrusts delighted</p>
+    </div>
+  <div class="box12">
+      <h2>Usefull Links</h2>
+      <ul>
+          <li><a href="">Classic Business</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Project</a></li>
+          <li><a href="">about</a></li>
+          <li><a href="">contact</a></li>
+      </ul>
+  </div>
+  
+     <div class="box12">
+      <h2>Services</h2>
+      <ul>
+        
+          <li><a href="">Marketing & Sales</a></li>
+          <li><a href="">Manufacturing</a></li>
+          <li><a href="">Supply Chain</a></li>
+          <li><a href="">Data Visualization</a></li>
+          <li><a href="">Big Data</a></li>
+      </ul>
+  </div>
+  <div class="box12">
+    <h2>Contact Info</h2>
+    <p>Possible offering at contempt mr distance stronger an. Attachment excellence announcing</p>
+     <ul>
+         <li><a href="">Email:hazel@yahoo.com </a></li>
+            <li><a href="">contact: +923456789011</a></li>
+     </ul>
+   <i class="fa-brands fa-facebook" style="background-color:darkblue; color: white"></i><i class="fa-brands fa-twitter" style="background-color: #1DA1F2; color: white"></i><i class="fa-brands fa-instagram" style="background-color:purple; color: white"></i><i class="fa-brands fa-youtube" style="background-color: red; color: white"></i>
+  </div>  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

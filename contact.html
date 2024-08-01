@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTER FORM</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+
+ *{
+    margin: 0px;
+   }
+   .header{
+    width:100%;
+    height: 80px;
+    background-color:blue;
+    grid-column: 1/4;
+    position: sticky;
+    top: 0px;
+    z-index: 100px;
+    }
+    nav ul{
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    font-family: calbiri;
+    font-size: 18px;
+    text-decoration: none;
+    }
+   ul li{
+    padding: 8px 14px;
+   list-style-type: none;
+   }
+   ul li a{
+    color: white;
+    text-decoration:none;
+    font-size: 20px;
+    font-family: calbiri;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    padding-left: 20px;
+   }
+
+   a:hover{
+    color: yellow;
+   }
+  li>img {
+    width: 140px;
+    height:70px;
+    float: left;
+    top:0;
+    z-index: 8px;
+   margin:-22px;
+   margin-left: 30px;
+  }
+    
+      button {
+    background-image:linear-gradient(90deg, rgba(30,85,189,1) 0%, rgba(67,126,235,1) 100%);
+    background-color:#437eeb;
+    color:white;
+    padding: 10px;
+    margin-left:355px;
+    margin-top: -10px;
+    border-radius: 15px;
+}
+    button:hover{
+/*    background-image:linear-gradient(90deg, rgba(30,85,189,1) 0%, rgba(67,126,235,1) 100%);*/
+/*    color:#437eeb;*/
+    background-color: white;
+    padding: 10px;
+    margin-left:355px;
+    margin-top: -10px;
+    border-radius: 15px;
+  }
+
+ 
+    body{
+         background-color: #E9F5DB;
+         height: 100vh;
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         margin:0px;
+  }
+  form{
+  	   
+  	     margin-left: 70px;
+         width: 450px;
+  	     background-color: transparent;
+  	      justify-content: center;
+
+  }
+  legend{
+  	text-align: center;
+  	font-size: 25px;
+  	font-family: futura-bk-btbook;
+  	text-transform: uppercase;
+  	color: black;
+  	font-weight: bold;
+
+  }
+  input{
+  	outline: 1px green solid;
+  	color: orange;
+  	width: 200px;
+  	height: 25px;
+  }
+  label{
+  	text-align: center;
+  	font-size: : 20px;
+  	font-family: futura-bk-btbook;
+  	text-transform: uppercase;
+  	color: black;
+  	font-weight: bold;
+  	letter-spacing: 3px;
+  }
+  .box1 {
+    justify-content: center;
+  }
+  
+ .box1 button { 
+  background-color:rgba(30,85,189,1);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-left:14px;
+  margin-top: 10px;
+  
+    }
+
+  .box1 button:hover { 
+  background-color:white!important;
+  color: blue;
+  padding: 15px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+   margin-left:14px;
+  margin-top: 10px;
+    }
+    
+  .con{
+    display: flex;
+    margin-top: 100px;
+    margin:20px;
+
+  }
+  .box2{
+    width: 600px;
+  
+  }
+   .box3{
+    width:400px;
+    margin: 10px;
+   
+  }
+  .box4{
+    padding: 10px;
+    margin: 10px;
+    margin-left: 90px;
+    box-shadow: 20px solid white;
+  }
+
+  .box4 h1{
+    font-size: 20px;
+    font-family: calbiri;
+    color: gray;
+  }
+  .box4 p{
+    font-size: 18px;
+    font-family: monospace;
+    color: black;
+  }
+  .box4 i{
+    color:blue;
+    background-color: white;
+    font-size: 25px;
+    border-radius: 10px;
+
+  }
+  .footer{
+    display: flex;
+    background-color:blue;  
+   
+   }
+   .footer h1{
+    font-family: calbiri;
+    font-size: 17px;
+    color: white;
+    line-height: 35px;
+    letter-spacing: 2px;
+    color: white;
+
+   }
+    .footer p{
+    font-family: calbiri;
+    font-size: 16px;
+    color: white;
+    line-height: 35px;
+    letter-spacing: 2px;
+
+   }
+   .footer ul {
+    margin: 5px;
+   }
+   .footer ul li  {
+     font-family: calbiri;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2px;
+    margin-left:-25px; 
+   }
+   .footer li a {
+        font-family: calbiri;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2px;
+    margin-left:-25px; 
+
+   }
+   .footer a:hover{
+    color: yellow;
+   }
+   .footer h2{
+     font-family: calbiri;
+    font-size: 19px;
+    text-align: left;
+    padding-left:20px;
+    color: white;
+    line-height: 35px;
+    padding-right: 14px;
+    letter-spacing: 3px;
+    color: white;
+    text-transform: uppercase;
+   }
+   .box12{
+    width: 300px;
+    padding: 10px 25px;
+     margin-top: 35px;
+   }
+   .footer i {
+    font-size: 30px;
+    margin: 9px;
+    padding: 10px;
+   }
+
+
+</style>
+<body>
+  <div class="header">
+<header>
+<nav>
+  <ul>
+  <li><img src="c1.png"></li>
+  <li><a href="index.html">home</a></li>  
+    <li><a href="about.html">About</a></li> 
+    <li><a href="Services.html">Services</a></li> 
+      <li><a href="contact.html">contact</a></li>
+   <li> <button><a href="login.html">LOGIN</a></button></li>
+  </ul>
+</nav>
+</header>
+</div>
+
+
+  <div class="box4">
+    <h1>Location</h1>
+    <p>22 Baker Street, London, United Kingdom, W1U 3BW</p>
+    <i class="fa-regular fa-envelope"></i>
+    </div>
+  <div class="box4">
+    <h1>Make A Call</h1>
+    <p>+44-20-7328-4499</p>
+    <i class="fa-solid fa-phone"></i>
+  </div>
+  <div class="box4">
+    <h1>Send A Mail</h1>
+    <p>end A Mail</p>
+    <i class="fa-solid fa-map"></i>
+</div>
+
+
+
+<div class="con">
+  <div class="box2">
+<form class="box1">
+	<fieldset class="box1"> 
+    <legend>contact form</legend>
+    <label for="fname">FIRST NAME</label><br><br>
+    <input type="text" name="fname" placeholder="FIRST NAME"><br><br>
+    <label for="email">EMAIL</label><br><br>
+    <input type="email" name="lname" placeholder="EMAIL"><br><br>
+    <label for="message">MESSAGE</label><br><br>
+    <textarea type="message" rows="8" cols="30" placeholder="send your message"></textarea><br><br>
+    <button>SEND MESSAGE</button>
+	</fieldset>
+</form>
+</div>
+<div class="box3">
+  <iframe width="500px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28941.979795593183!2d67.02121565416651!3d24.940671184093468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f8014fe5943%3A0x11df7a65effb1ef6!2sNorth%20Nazimabad%20Town%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1708381223638!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+
+<div class="footer">
+    <div class="box12">
+        <img src="logo-light.png">
+        <p>Required honoured trifling eat pleasure man relation. Assurance yet bed was improving furniture man. Distrusts delighted</p>
+    </div>
+  <div class="box12">
+      <h2>Usefull Links</h2>
+      <ul>
+          <li><a href="">Classic Business</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Project</a></li>
+          <li><a href="">about</a></li>
+          <li><a href="">contact</a></li>
+      </ul>
+  </div>
+  
+     <div class="box12">
+      <h2>Services</h2>
+      <ul>
+        
+          <li><a href="">Marketing & Sales</a></li>
+          <li><a href="">Manufacturing</a></li>
+          <li><a href="">Supply Chain</a></li>
+          <li><a href="">Data Visualization</a></li>
+          <li><a href="">Big Data</a></li>
+      </ul>
+  </div>
+  <div class="box12">
+    <h2>Contact Info</h2>
+    <p>Possible offering at contempt mr distance stronger an. Attachment excellence announcing</p>
+     <ul>
+         <li><a href="">Email:hazel@yahoo.com </a></li>
+            <li><a href="">contact: +923456789011</a></li>
+     </ul>
+   <i class="fa-brands fa-facebook" style="background-color:darkblue; color: white"></i><i class="fa-brands fa-twitter" style="background-color: #1DA1F2; color: white"></i><i class="fa-brands fa-instagram" style="background-color:purple; color: white"></i><i class="fa-brands fa-youtube" style="background-color: red; color: white"></i>
+  </div>  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

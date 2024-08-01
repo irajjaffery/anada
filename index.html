@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ANADA</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+
+   *{
+    margin: 0px;
+   }
+   .header{
+    width:100%;
+    height: 80px;
+    background-color:blue;
+    grid-column: 1/4;
+    position:sticky;
+    top: 0px;
+    z-index: 100px;
+    }
+    nav ul{
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    font-family: calbiri;
+    font-size: 18px;
+    text-decoration: none;
+    }
+   ul li{
+    padding: 8px 14px;
+   list-style-type: none;
+   }
+   ul li a{
+    color: white;
+    text-decoration:none;
+    font-size: 20px;
+    font-family: calbiri;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    padding-left: 20px;
+   }
+
+   a:hover{
+    color: yellow;
+ }
+   
+   li >img{
+    width: 140px;
+    height:70px;
+    float: left;
+    top:0;
+    z-index: 8px;
+   margin:-22px;
+   margin-left: 30px;
+  }
+    button {
+    background-image:linear-gradient(90deg, rgba(30,85,189,1) 0%, rgba(67,126,235,1) 100%);
+    background-color:#437eeb;
+    color:white;
+    padding: 10px;
+    margin-left:355px;
+    margin-top: -10px;
+    border-radius: 15px;
+}
+    button:hover{
+/*    background-image:linear-gradient(90deg, rgba(30,85,189,1) 0%, rgba(67,126,235,1) 100%);*/
+/*    color:#437eeb;*/
+    background-color: white;
+    padding: 10px;
+    margin-left:355px;
+    margin-top: -10px;
+    border-radius: 15px;
+  }
+
+  .container{
+    display: flex;
+    background-color:lightgrey; 
+    margin-top:-14px;
+    padding: 10px;
+  }
+
+
+
+   .box1{
+        width: 400px;
+        padding:40px;
+
+    }
+    .box1 h1{
+      font-size: 30px;
+      font-family: monospace;
+      color: black;
+      line-height: 35px;
+      word-spacing: 3px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .box1 h2{
+       font-size: 20px;
+       font-family: monospace;
+       color: blue;
+       line-height: 35px;
+       word-spacing: 3px;
+       letter-spacing: 2px;
+    }
+    
+    .box1 p{
+        font-size: 16px;
+        font-family: calbiri;
+        color:grey;
+        line-height: 35px;
+        word-spacing: 3px;
+        letter-spacing: 2px;
+    }
+
+ .box1 button { 
+  background-color:rgba(30,85,189,1);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-left:-14px;
+  margin-top: 10px;
+  
+    }
+
+  .box1 button:hover { 
+  background-color:white!important;
+  color: blue;
+  padding: 15px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+   margin-left:-14px;
+  margin-top: 10px;
+    }
+    
+    .box2{
+        width: 650px;
+        margin:60px;
+    }
+    .box2 img{
+      width: 500px;
+      height:400px;
+    }
+
+
+
+
+    .container1{
+      display: flex;
+    }
+    
+
+    .box3{
+        width: 1200px;
+        padding:30px 30px;
+        margin:0px 90px;
+
+    }
+    .box3 h1{
+      font-size: 24px;
+      font-family: monospace;
+      color: black;
+      line-height: 35px;
+      word-spacing:1px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-top:10px;
+    }
+
+    .box3 h2{
+       font-size: 20px;
+       font-family: monospace;
+       color: blue;
+       line-height: 35px;
+       word-spacing: 3px;
+       letter-spacing: 2px;
+       padding-top: 20px;
+    }
+    
+    .box3 p{
+        font-size: 15px;
+        font-family: calbiri;
+        color:grey;
+        line-height: 35px;
+        word-spacing: 3px;
+        letter-spacing: 2px;
+        padding-top:10px;
+    }
+
+    .box3 button { 
+    background-color:rgba(30,85,189,1);
+    display: inline-block;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  float: left;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 13px;
+  
+    }
+
+     .box3 button:hover { 
+    background-color:white;
+  color: blue;
+  padding: 15px;
+  border-radius: 10px;
+  float: left;
+  letter-spacing: 2px;
+    font-weight: bold;
+    margin: 13px;
+    }
+      
+      .box4{
+      width:450px;
+        padding:60px;
+        margin-left:120px;
+     
+
+    }
+    .box4 h1{
+      font-size: 30px;
+      font-family: monospace;
+      color: black;
+      line-height: 35px;
+      word-spacing: 3px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .box4 h2{
+      font-size: 20px;
+       font-family: monospace;
+       color: blue;
+       line-height: 35px;
+       word-spacing: 3px;
+       letter-spacing: 2px;
+    }
+    
+    .box4 p{
+        font-size: 16px;
+        font-family: calbiri;
+        color:grey;
+        line-height: 35px;
+        word-spacing: 3px;
+        letter-spacing: 2px;
+    }
+
+    .box4 button { 
+    background-color:rgba(30,85,189,1);
+    display: inline-block;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  float: left;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 13px;
+  
+    }
+
+     .box4 button:hover { 
+    background-color:white;
+  color: blue;
+  padding: 15px;
+  border-radius: 10px;
+  float: left;
+  letter-spacing: 2px;
+    font-weight: bold;
+    margin: 13px;
+    }
+.box5{
+        width: 400px;
+        margin:60px;
+
+      }
+
+    .box5 img{
+      width: 400px;
+      height:400px;
+    }
+
+  
+
+     .box6{
+      width:500px;
+        margin-left:120px;
+       
+    }
+    .box6 h2{
+      font-size: 25px;
+      font-family: monospace;
+      color: black;
+      line-height: 35px;
+      word-spacing: 3px;
+        letter-spacing: 2px;
+     
+     } 
+     .box7 p{
+        font-size: 15px;
+        font-family: calbiri;
+        color:grey;
+        line-height: 35px;
+        word-spacing: 3px;
+        letter-spacing: 2px;
+    }
+
+      .box7{
+      width:400px;
+        margin-left:50px;
+        margin-top:20px;
+        margin-bottom:20px;
+
+}
+    .box7 button { 
+    background-color:rgba(30,85,189,1);
+    display: inline-block;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  float: left;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 13px;
+  
+    }
+
+     .box7 button:hover { 
+    background-color:white;
+  color: blue;
+  padding: 15px;
+  border-radius: 10px;
+  float: left;
+  letter-spacing: 2px;
+    font-weight: bold;
+    margin: 13px;
+    }
+   .footer{
+    display: flex;
+    background-color:blue; 
+   
+   }
+   .footer h1{
+    font-family: calbiri;
+    font-size: 17px;
+    color: white;
+    line-height: 35px;
+    letter-spacing: 2px;
+    color: white;
+
+   }
+    .footer p{
+    font-family: calbiri;
+    font-size: 16px;
+    color: white;
+    line-height: 35px;
+    letter-spacing: 2px;
+
+   }
+   .footer ul {
+    margin: 5px;
+   }
+   .footer ul li  {
+     font-family: calbiri;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2px;
+    margin-left:-25px; 
+   }
+   .footer li a {
+        font-family: calbiri;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2px;
+    margin-left:-25px; 
+
+   }
+   .footer a:hover{
+    color: yellow;
+   }
+   .footer h2{
+     font-family: calbiri;
+    font-size: 19px;
+    text-align: left;
+    padding-left:20px;
+    color: white;
+    line-height: 35px;
+    padding-right: 14px;
+    letter-spacing: 3px;
+    color: white;
+    text-transform: uppercase;
+   }
+   .box12{
+    width: 300px;
+    padding: 10px 25px;
+    margin-top: 35px;
+   }
+   .footer i {
+    font-size: 30px;
+    margin: 9px;
+    padding: 10px;
+   }
+
+
+    
+    </style>
+    <body>
+
+      <div class="header">
+  <header>
+<nav>
+  <ul>
+  <li><img src="c1.png"></li>
+     <li><a href="index.html">HOME</a></li> 
+    <li><a href="about.html">About</a></li> 
+    <li><a href="Services.html">Services</a></li> 
+    <li><a href="contact.html">contact</a></li>
+    <li><button><a href="login.html">LOGIN</a></button></li>
+  </ul>
+</nav>
+  </header>
+     
+     <div class="container">
+<div class="box1">
+  <h2>Applying Data Science</h2>
+  <h1>And Techniques With Systems</h1>
+  <p>Contented continued any happiness instantly objection yet her allowance. Use correct day new brought tedious. Kept easy or sons my it done.</p>
+<button>GET STARTED</button>
+</div>
+ <div class="box2">
+  <img src="5.png">
+ </div>
+ </div>
+
+    <div class="container1">
+  <div class="box2">
+    <img src="2.png">
+  </div>
+<div class="box1">
+  <h1>Analysis Competitors</h1>
+  <p>Especially of dissimilar up attachment themselves by interested boisterous linen mrs seems men table. jennings dashwood to quitting marriage bachelor in. On as conviction in of appearance apartments boisterous.</p>
+    <button>GET STARTED</button>
+</div>
+ </div>
+ <div class="container">
+  <div class="box3">
+    <h2>ABOUT US</h2>
+    <h1>We provide big data analytics Techniques & realtime data Solutions</h1>
+    <p>Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. Extremity as if breakfast agreement. Off now mistress provided out horrible opinions. Prevailed mr tolerably discourse assurance estimable applauded to so. Him everything melancholy uncommonly but solicitude inhabiting projection.</p>
+ <button>Research And Solution</button>
+ <button>Design And Strategy</button>
+ <button>Generate And Report</button>
+  </div>
+ </div>
+  
+  <div class="container1">
+    <div class="box4">
+    <h1>Data Visualization Research technique & Solution</h1>
+    <p>Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery.</p>
+    <button>READ MORE</button>
+    </div>
+      <div class="box5">
+        <img src="7.png">
+      </div>
+  </div>
+
+  <div class="container1">
+    <div class="box6">
+      <h2>We offer a wide range of services and provide realtime data Solutions</h2>
+    </div>
+    <div class="box7">
+    <p>Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression.</p> 
+    <button>VIEW ALL</button>
+    </div>
+
+  </div>
+<div class="container">
+<div class="box1">
+  <img height="250px" src="1.png">
+  <h1>BIG DATA</h1>
+  <p>Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.</p>
+    <button>GET STARTED</button>
+</div>
+
+<div class="box1">
+  <img height="250px" src="3.png">
+  <h1>DATA ANALYTIC</h1>
+  <p>Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.</p>
+    <button>GET STARTED</button>
+</div>
+
+<div class="box1">
+  <img height="250px" src="4.png">
+  <h1>BUSINESS INTELLIGENCE</h1>
+  <p>Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.</p>
+    <button>GET STARTED</button>
+</div>
+
+</div>
+
+  <div class="footer">
+    <div class="box12">
+        <img src="logo-light.png">
+        <p>Required honoured trifling eat pleasure man relation. Assurance yet bed was improving furniture man. Distrusts delighted</p>
+    </div>
+  <div class="box12">
+      <h2>Usefull Links</h2>
+      <ul>
+          <li><a href="">Classic Business</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Project</a></li>
+          <li><a href="">about</a></li>
+          <li><a href="">contact</a></li>
+      </ul>
+  </div>
+  
+     <div class="box12">
+      <h2>Services</h2>
+      <ul>
+        
+          <li><a href="">Marketing & Sales</a></li>
+          <li><a href="">Manufacturing</a></li>
+          <li><a href="">Supply Chain</a></li>
+          <li><a href="">Data Visualization</a></li>
+          <li><a href="">Big Data</a></li>
+      </ul>
+  </div>
+  <div class="box12">
+    <h2>Contact Info</h2>
+    <p>Possible offering at contempt mr distance stronger an. Attachment excellence announcing</p>
+     <ul>
+         <li><a href="">Email:hazel@yahoo.com </a></li>
+            <li><a href="">contact: +923456789011</a></li>
+     </ul>
+   <i class="fa-brands fa-facebook" style="background-color:darkblue; color: white"></i><i class="fa-brands fa-twitter" style="background-color: #1DA1F2; color: white"></i><i class="fa-brands fa-instagram" style="background-color:purple; color: white"></i><i class="fa-brands fa-youtube" style="background-color: red; color: white"></i>
+  </div>  
+</div>   
+    </body>
+    </html>
